@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1024126843554-9dmdnr81undtaoi2k2nbgu59ca3gb5kq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1024126843554-9dmdnr81undtaoi2k2nbgu59ca3gb5kq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDiaaonGfhPNzNJfbKh6I6dotoEOuzKcjk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>353735037421</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Salander.Iny</string>
+	<key>PROJECT_ID</key>
+	<string>inyapp-9a14a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>inyapp-9a14a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:353735037421:ios:3b034dd67ab72d040997e4</string>
+</dict>
+</plist>
