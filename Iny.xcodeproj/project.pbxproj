@@ -19,6 +19,11 @@
 		2819628B2B9B57A500796DF3 /* NewPodcastsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819628A2B9B57A500796DF3 /* NewPodcastsCollectionViewCell.swift */; };
 		284B744F2BA48F2300188CE6 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B744E2BA48F2300188CE6 /* SignInPresenter.swift */; };
 		284B74512BA4952D00188CE6 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B74502BA4952D00188CE6 /* SignInInteractor.swift */; };
+		2854F2C82BB31A17007849A6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854F2C72BB31A17007849A6 /* SignUpVC.swift */; };
+		2854F2CA2BB31A27007849A6 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854F2C92BB31A27007849A6 /* SignUpPresenter.swift */; };
+		2854F2CC2BB31AEE007849A6 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854F2CB2BB31AEE007849A6 /* SignUpInteractor.swift */; };
+		2854F2CE2BB31B01007849A6 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854F2CD2BB31B01007849A6 /* SignUpRouter.swift */; };
+		2854F2D02BB36A11007849A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854F2CF2BB36A11007849A6 /* Constants.swift */; };
 		28738EE42BA1F98E00E5898D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28738EE32BA1F98E00E5898D /* GoogleService-Info.plist */; };
 		287F46A82BA2561900EA187C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 287F46A72BA2561900EA187C /* FirebaseAuth */; };
 		287F46AE2BA2561900EA187C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 287F46AD2BA2561900EA187C /* FirebaseDatabase */; };
@@ -30,6 +35,8 @@
 		288C92C82BA0FAA700895477 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C92C72BA0FAA700895477 /* HomeVC.swift */; };
 		288C92CA2BA10B3100895477 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C92C92BA10B3100895477 /* IntroVC.swift */; };
 		288C92CC2BA1138F00895477 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C92CB2BA1138F00895477 /* AuthVC.swift */; };
+		28A47CF12BB1FF5B00E933E6 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A47CF02BB1FF5B00E933E6 /* GeneralError.swift */; };
+		28A47CF32BB20E0A00E933E6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A47CF22BB20E0A00E933E6 /* AuthManager.swift */; };
 		28BB5B532BA7CCC300FD971D /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB5B522BA7CCC300FD971D /* TabBarRouter.swift */; };
 		28BB5B552BA7D84B00FD971D /* RootWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB5B542BA7D84B00FD971D /* RootWindowManager.swift */; };
 		28BB5B572BA8826C00FD971D /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB5B562BA8826C00FD971D /* TabBarInteractor.swift */; };
@@ -60,11 +67,18 @@
 		2819628A2B9B57A500796DF3 /* NewPodcastsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPodcastsCollectionViewCell.swift; sourceTree = "<group>"; };
 		284B744E2BA48F2300188CE6 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		284B74502BA4952D00188CE6 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		2854F2C72BB31A17007849A6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2854F2C92BB31A27007849A6 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		2854F2CB2BB31AEE007849A6 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		2854F2CD2BB31B01007849A6 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		2854F2CF2BB36A11007849A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		28738EE32BA1F98E00E5898D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		287F46D92BA3AFFD00EA187C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		288C92C72BA0FAA700895477 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		288C92C92BA10B3100895477 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		288C92CB2BA1138F00895477 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		28A47CF02BB1FF5B00E933E6 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		28A47CF22BB20E0A00E933E6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		28BB5B522BA7CCC300FD971D /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		28BB5B542BA7D84B00FD971D /* RootWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindowManager.swift; sourceTree = "<group>"; };
 		28BB5B562BA8826C00FD971D /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
@@ -144,6 +158,7 @@
 				281962632B9A247000796DF3 /* AppDelegate.swift */,
 				2819626E2B9A247300796DF3 /* LaunchScreen.storyboard */,
 				28BB5B782BACE8A400FD971D /* Extensions.swift */,
+				2854F2CF2BB36A11007849A6 /* Constants.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -154,6 +169,7 @@
 				28BB5B542BA7D84B00FD971D /* RootWindowManager.swift */,
 				28BB5B5B2BA8E2AF00FD971D /* BasketManager.swift */,
 				28BB5B762BAB3A3500FD971D /* ProfileInfoManager.swift */,
+				28A47CF22BB20E0A00E933E6 /* AuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -180,9 +196,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		2854F2C62BB319E5007849A6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2854F2C72BB31A17007849A6 /* SignUpVC.swift */,
+				2854F2C92BB31A27007849A6 /* SignUpPresenter.swift */,
+				2854F2CB2BB31AEE007849A6 /* SignUpInteractor.swift */,
+				2854F2CD2BB31B01007849A6 /* SignUpRouter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		28BB5B4E2BA7CA6000FD971D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2854F2C62BB319E5007849A6 /* SignUp */,
 				28BB5B6B2BAA05DE00FD971D /* Profile */,
 				28BB5B682BA9E89300FD971D /* Basket */,
 				28BB5B632BA9CDB100FD971D /* Saved */,
@@ -263,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				28BB5B742BAA4CB000FD971D /* FirebaseError.swift */,
+				28A47CF02BB1FF5B00E933E6 /* GeneralError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -355,10 +384,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BB5B6D2BAA067A00FD971D /* ProfileRouter.swift in Sources */,
+				2854F2D02BB36A11007849A6 /* Constants.swift in Sources */,
+				2854F2CA2BB31A27007849A6 /* SignUpPresenter.swift in Sources */,
+				2854F2CC2BB31AEE007849A6 /* SignUpInteractor.swift in Sources */,
 				28BB5B792BACE8A400FD971D /* Extensions.swift in Sources */,
+				28A47CF32BB20E0A00E933E6 /* AuthManager.swift in Sources */,
 				28BB5B5E2BA8ED5400FD971D /* TabBarPresenter.swift in Sources */,
 				28BB5B5A2BA8939800FD971D /* SignInRouter.swift in Sources */,
 				28BB5B652BA9CDC600FD971D /* SavedRouter.swift in Sources */,
+				28A47CF12BB1FF5B00E933E6 /* GeneralError.swift in Sources */,
 				2819627C2B9A838300796DF3 /* BasketVC.swift in Sources */,
 				281962682B9A247000796DF3 /* ProfileVC.swift in Sources */,
 				28BB5B6A2BA9E94C00FD971D /* BasketRouter.swift in Sources */,
@@ -377,9 +411,11 @@
 				28BB5B672BA9D86200FD971D /* SavedVC.swift in Sources */,
 				2819628B2B9B57A500796DF3 /* NewPodcastsCollectionViewCell.swift in Sources */,
 				28BB5B612BA8FB8300FD971D /* HomeRouter.swift in Sources */,
+				2854F2CE2BB31B01007849A6 /* SignUpRouter.swift in Sources */,
 				28BB5B572BA8826C00FD971D /* TabBarInteractor.swift in Sources */,
 				281962822B9A942500796DF3 /* TabBarVC.swift in Sources */,
 				284B74512BA4952D00188CE6 /* SignInInteractor.swift in Sources */,
+				2854F2C82BB31A17007849A6 /* SignUpVC.swift in Sources */,
 				281962662B9A247000796DF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
