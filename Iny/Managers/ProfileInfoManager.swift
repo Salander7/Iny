@@ -8,7 +8,7 @@
 import Foundation
 import GoogleSignIn
 import FirebaseAuth
-
+    
 protocol ProfileInfoManagerProtocol {
     func fetchProfilePicAndEmail(completion: @escaping (_ photo: String?, _ email: String?) -> Void)
     func fetchProfileId() -> String?

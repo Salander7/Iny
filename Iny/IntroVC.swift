@@ -4,23 +4,34 @@
 //
 //  Created by Deniz Dilbilir on 12/03/2024.
 //
-
 import UIKit
 
 class IntroVC: UIViewController {
-
-    private let getStartedButton = UIButton()
+    
+    private let getStartedButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemYellow
+        button.setTitle("Let's Get Started!🌠", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.cornerRadius = 25
+        button.layer.masksToBounds = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "intro")
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     private let uiView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
-        view.alpha = 0.5
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -31,6 +42,7 @@ class IntroVC: UIViewController {
         label.textColor = .black
         label.font = .systemFont(ofSize: 40, weight: .bold)
         label.text = "Get ready to slay in style with Iny, where shopping is a breeze!"
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -41,31 +53,39 @@ class IntroVC: UIViewController {
         view.addSubview(imageView)
         view.addSubview(label)
         view.addSubview(uiView)
-        configureGetStartedButton()
-//        getStartedButton.addTarget(self, action: #selector(didTapGetStarted), for: .touchUpInside)
-
-     
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        imageView.frame = view.bounds
-        uiView.frame = view.bounds
-        getStartedButton.frame = CGRect(x: 20, y: view.height-100-view.safeAreaInsets.bottom, width: view.width-40, height: 50)
-        label.frame = CGRect(x: 30, y: getStartedButton.top-30, width: view.width-60, height: 150)
-    }
-    
-    func configureGetStartedButton() {
-        getStartedButton.backgroundColor = .systemYellow
-        getStartedButton.setTitle("Let's Get Started!🌠", for: .normal)
         view.addSubview(getStartedButton)
-        getStartedButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
-        getStartedButton.setTitleColor(.black, for: .normal)
-        getStartedButton.layer.cornerRadius = 25
-        getStartedButton.layer.masksToBounds = true
+        
+        setupConstraints()
+        
+       
+        // getStartedButton.addTarget(self, action: #selector(didTapGetStarted), for: .touchUpInside)
     }
-//    @objc func didTapGetStarted() {
-//        let vc = AuthVC()
-//        vc.completionHandler =
-//    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            uiView.topAnchor.constraint(equalTo: view.topAnchor),
+            uiView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            uiView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            uiView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            label.bottomAnchor.constraint(equalTo: getStartedButton.topAnchor, constant: -30),
+            
+            getStartedButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            getStartedButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            getStartedButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            getStartedButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+
+    @objc func didTapGetStarted() {
+        
+    }
 }

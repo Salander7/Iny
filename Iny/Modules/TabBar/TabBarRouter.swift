@@ -5,7 +5,7 @@
 //  Created by Deniz Dilbilir on 18/03/2024.
 //
 
-import UIKit.UIViewController
+import UIKit
 import Foundation
 
 protocol TabBarRouterProtocol {

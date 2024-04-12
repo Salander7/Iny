@@ -6,13 +6,10 @@
 //
 
 import Foundation
-import UIKit.UIViewController
+import UIKit
 
 protocol ProfileRouterProtocol {
     func navigateToSignIn()
-    func nagivateToAdress()
-    func navigateToPayment()
-    func navigateToPurchases()
 }
 
 final class ProfileRouter {
@@ -27,6 +24,11 @@ final class ProfileRouter {
     static func configureProfile() -> UIViewController {
         let vc = ProfileVC()
         let router = ProfileRouter(vc: vc, rootWindowManager: RootWindowManager.rootWindowManager)
+        let interactor = ProfileInteractor(profileInfoManager: ProfileInfoManager(), authManager: AuthManager())
+        let presenter = ProfilePresenter(vc: vc, interactor: interactor, router: router)
+        
+        vc.presenter = presenter
+        interactor.presenter = presenter
         return vc
     }
 }
@@ -36,18 +38,5 @@ extension ProfileRouter: ProfileRouterProtocol {
         let signIn = UINavigationController(rootViewController: SignInRouter.startSignIn())
         rootWindowManager?.configureRootVC(signIn, animated: true)
     }
-    
-    func nagivateToAdress() {
-        
-    }
-    
-    func navigateToPayment() {
-        
-    }
-    
-    func navigateToPurchases() {
-        
-    }
-    
     
 }

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct specialColors {
+        
+        static let inyAppColor = "inyAppColor"
+
+    
+    }
